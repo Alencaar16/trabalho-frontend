@@ -1,0 +1,28 @@
+/* Cores globais */
+
+:root {
+    --bg-color: #050a11;
+    --surface-color: #0b111a;
+    --border-color: #1a2332;
+    --accent-cyan: #00e5ff;
+    --text-primary: #ffffff;
+    --text-secondary: #8c9baf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
