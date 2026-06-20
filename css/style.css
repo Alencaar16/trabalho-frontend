@@ -9,6 +9,7 @@
     --text-secondary: #8c9baf;
 }
 
+/* Ajustes básicos */
 * {
     margin: 0;
     padding: 0;
@@ -25,4 +26,33 @@ body {
 
 main {
     flex: 1;
+}
+
+/* Navegação do Site */
+header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.nav-container {
+    display: block;
+}
+
+.text-accent { 
+    color: var(--accent-cyan); 
+}
+.logo-icon { 
+    background-color: var(--accent-cyan); 
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--text-primary);
 }
