@@ -57,6 +57,37 @@ nav a:hover {
     color: var(--text-primary);
 }
 
+/* Componentes */
+
+.btn-custom {
+    background-color: var(--accent-cyan);
+    color: var(--bg-color); /* Texto escuro para ótimo contraste */
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Hover: Brilho (glow), tom ligeiramente mais escuro e botão levantado */
+.btn-custom:hover {
+    background-color: #00b3cc; 
+    color: var(--bg-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 229, 255, 0.3);
+}
+
+/* Badge "Disponível" */
+.status-badge {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-cyan);
+    border-radius: 50%;
+    display: inline-block;
+}
+
 /* Menu Hamburger */
 
 .menu-toggle {
@@ -92,7 +123,6 @@ nav a:hover {
         display: block;
     }
 
-    /* Esconde e posiciona o NAV inteiro absolutamente */
     .nav-container {
         display: none; 
         position: absolute;
@@ -104,7 +134,6 @@ nav a:hover {
         z-index: 1000;
     }
 
-    /* O JavaScript injeta esta classe para exibir o menu */
     .nav-container.active {
         display: block;
     }
