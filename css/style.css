@@ -113,8 +113,54 @@ nav a:hover {
     left: 0;
 }
 
-.hamburger::before { top: -8px; }
-.hamburger::after { top: 8px; }
+.hamburger::before { 
+    top: -8px; 
+}
+.hamburger::after { 
+    top: 8px; 
+}
+
+/* processo */
+
+.process-section{
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.process-item{
+    display:flex;
+    gap:30px;
+    padding:20px 0;
+    border-bottom:1px solid rgba(255,255,255,.06);
+    transition:.3s;
+}
+
+.process-item:last-child{
+    border-bottom:none;
+}
+
+.process-item:hover{
+    transform:translateX(8px);
+}
+
+.process-number{
+    color:var(--accent-cyan);
+    font-size:1.15rem;
+    font-weight:bold;
+    min-width:55px;
+}
+
+.process-item h4{
+    color:white;
+    font-size:1.4rem;
+    margin-bottom:10px;
+}
+
+.process-item p{
+    color:var(--text-secondary);
+    line-height:1.8;
+    margin:0;
+}
 
 /* contato e formulário */
 
@@ -185,5 +231,22 @@ nav a:hover {
 
     nav ul li {
         margin: 1rem 0;
+    }
+
+    .process-item{
+
+        gap:18px;
+
+        padding:22px 0;
+    }
+
+    .process-item h4{
+
+        font-size:1.15rem;
+    }
+
+    .process-item:hover{
+
+        transform:none;
     }
 }
